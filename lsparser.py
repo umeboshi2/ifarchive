@@ -183,7 +183,9 @@ def check_local_file_url_only(filename):
             return
         print 55*'#'
         print "Retrieving file %s" % relname
-        time.sleep(0.1)
+        random_seconds = random.random() * 2 + 1
+        print "Sleeping for %s" % random_seconds
+        time.sleep(random_seconds)
         url = make_url(relname)
         cmd = ['git-annex', 'addurl', url, '--file=%s' % relname]
         subprocess.check_call(cmd)
