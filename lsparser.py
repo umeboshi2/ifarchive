@@ -199,8 +199,12 @@ if __name__ == '__main__':
     bp = ps[0]['parent']
     [make_stanza_directories(s) for s in ps]
     fl = make_complete_file_list(ps)
-    fl = fl[:620]
     fl.sort()
+    count = 0
     for f in fl:
+        count += 1
         check_local_file_url_only(f)
+        if not count % 20:
+            subprocess.check_call(['git-annex', 'sync'])
+            
         
