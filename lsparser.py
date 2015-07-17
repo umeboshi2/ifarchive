@@ -159,6 +159,8 @@ def check_local_file(filename):
     if relname == 'ls-lR':
         return
     if not os.path.isfile(filename):
+        if os.path.islink(relname):
+            return
         print "Retrieving file %s" % relname
         retrieve_local_file(relname)
         check_local_file(filename)
@@ -175,6 +177,8 @@ def check_local_file_url_only(filename):
     if relname == 'ls-lR':
         return
     if not os.path.isfile(filename):
+        if os.path.islink(relname):
+            return
         print "Retrieving file %s" % relname
         url = make_url(relname)
         cmd = ['git-annex', 'addurl', url, '--file=%s' % relname]
