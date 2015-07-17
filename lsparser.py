@@ -181,6 +181,7 @@ def check_local_file_url_only(filename):
         if os.path.islink(relname):
             return
         print "Retrieving file %s" % relname
+        time.sleep(0.1)
         url = make_url(relname)
         cmd = ['git-annex', 'addurl', url, '--file=%s' % relname]
         subprocess.check_call(cmd)
@@ -209,7 +210,6 @@ if __name__ == '__main__':
     for f in fl:
         count += 1
         check_local_file_url_only(f)
-        time.sleep(0.1)
         if not count % 200:
             subprocess.check_call(['git-annex', 'sync'])
             
