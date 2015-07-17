@@ -214,7 +214,7 @@ if __name__ == '__main__':
     for f in fl:
         count += 1
         check_local_file_url_only(f)
-        if not count % 200:
-            subprocess.check_call(['git-annex', 'sync'])
+        if not count % 20:
+            subprocess.check_call(['git-annex', 'sync', 'origin'])
             
         
