@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os, sys
+import time
 import subprocess
 import multiprocessing
 from multiprocessing.pool import ThreadPool
@@ -208,6 +209,7 @@ if __name__ == '__main__':
     for f in fl:
         count += 1
         check_local_file_url_only(f)
+        time.sleep(0.1)
         if not count % 200:
             subprocess.check_call(['git-annex', 'sync'])
             
