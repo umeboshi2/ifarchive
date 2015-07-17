@@ -177,7 +177,7 @@ def check_local_file_url_only(filename):
     if not os.path.isfile(filename):
         print "Retrieving file %s" % relname
         url = make_url(relname)
-        cmd = ['git-annex', 'addurl', url]
+        cmd = ['git-annex', 'addurl', url, '--file=%s' % relname]
         subprocess.check_call(cmd)
         
 
