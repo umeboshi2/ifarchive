@@ -199,8 +199,8 @@ if __name__ == '__main__':
     bp = ps[0]['parent']
     [make_stanza_directories(s) for s in ps]
     fl = make_complete_file_list(ps)
-    fl = fl[:100]
+    fl = fl[:120]
     fl.sort()
     for f in fl:
-        check_local_file(f)
+        check_local_file_url_only(f)
         
