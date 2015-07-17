@@ -180,6 +180,7 @@ def check_local_file_url_only(filename):
     if not os.path.isfile(filename):
         if os.path.islink(relname):
             return
+        print 55*'#'
         print "Retrieving file %s" % relname
         time.sleep(0.1)
         url = make_url(relname)
