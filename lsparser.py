@@ -209,7 +209,8 @@ if __name__ == '__main__':
     bp = ps[0]['parent']
     [make_stanza_directories(s) for s in ps]
     fl = make_complete_file_list(ps)
-    random.shuffle(fl)
+    #random.shuffle(fl)
+    fl.sort()
     count = 0
     for f in fl:
         count += 1
