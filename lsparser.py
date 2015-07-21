@@ -6,8 +6,6 @@ import subprocess
 import multiprocessing
 from multiprocessing.pool import ThreadPool
 
-from ftplib import FTP
-
 import requests
 
 def init_git_annex():
@@ -18,21 +16,6 @@ def init_git_annex():
     cmd = ['git', 'config', 'remote.origin.annex-ignore', 'true']
     subprocess.check_call(cmd)
     
-
-def get_main_list_ftp(filename):
-    if not os.path.exists(filename):
-        conn = FTP('ftp.ifarchive.org')
-        print "Connected to ftp.ifarchive.org"
-        conn.login()
-        conn.cwd('if-archive')
-        print "Retrieving", filename
-        with file(filename, 'w') as outfile:
-            conn.retrbinary('RETR %s' % filename, outfile.write)
-        conn.quit()
-        print "Finished", filename
-    else:
-        print filename, 'exists.'
-
 
 def get_main_list(filename):
     if not os.path.exists(filename):
