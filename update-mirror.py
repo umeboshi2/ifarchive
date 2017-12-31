@@ -8,14 +8,20 @@ import requests
 
 
 index_url = 'http://ifarchive.org/indexes/Master-Index.xml'
-runtime_dir = Path(os.environ['XDG_RUNTIME_DIR'])
+if 'XDG_RUNTIME_DIR' in os.environ:
+    runtime_dir = Path(os.environ['XDG_RUNTIME_DIR'])
+else:
+    import pwd
+    if 'USER' not in os.environ:
+        raise RuntimeError('No USER environment variable!!!')
+    uid = pwd.getpwnam(os.environ['USER']).pw_uid
+    runtime_dir = Path('/run/user/{}'.format(uid))
+    
+    
 local_index = runtime_dir / 'ifarchive/Master-Index.xml'
 
-#http://ifarchive.smallwhitehouse.org/if-archive/art/if-artshow/spring1999/crystal.zip
-
-
 def make_url(filepath):
-    return "http://ifarchive.org/{}".format(str(filepath))
+    return "http://mirror.ifarchive.org/{}".format(str(filepath))
 
 
 def add_url(url, filename):
@@ -73,7 +79,6 @@ def parse_file_element(element):
     url = make_url(file)
     add_url(url, str(file))
 
-
 def parse_directory_element(element):
     directory = Path(element.find('name').text)
     if not directory.is_dir():
@@ -86,11 +91,13 @@ parsers = dict(file=parse_file_element, directory=parse_directory_element)
 p = parse_index()
 r = p.getroot()
 children = r.getchildren()
+directories = r.findall('directory')
+for element in directories:
+    parse_directory_element(element)
+    
 for child in r.getchildren():
     tags = ['file', 'directory']
     if child.tag not in tags:
         raise RuntimeError('Unrecognized tag {}.'.format(child.tag))
-        
-    #parse_file_element(child)
     parsers[child.tag](child)
     
