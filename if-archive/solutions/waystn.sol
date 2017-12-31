@@ -1,1 +1,1 @@
-../../.git/annex/objects/2x/ZF/SHA256E-s2290--5015ab61e15053258cb2cee06d1607ec7f34fa4e9122778b6db70190336d47e5.sol/SHA256E-s2290--5015ab61e15053258cb2cee06d1607ec7f34fa4e9122778b6db70190336d47e5.sol
+../../.git/annex/objects/GM/4Z/URL--http&c%%mirror.ifarchive.org%if-archive%solutions%waystn.sol/URL--http&c%%mirror.ifarchive.org%if-archive%solutions%waystn.sol

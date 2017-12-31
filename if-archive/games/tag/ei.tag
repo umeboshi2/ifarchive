@@ -1,1 +1,1 @@
-../../../.git/annex/objects/93/62/SHA256E-s35839--b35171521719c637bf9bc57143af812764d33e83b883c4963f249e1eaa5d8e46.tag/SHA256E-s35839--b35171521719c637bf9bc57143af812764d33e83b883c4963f249e1eaa5d8e46.tag
+../../../.git/annex/objects/44/Gk/URL--http&c%%mirror.ifarchive.org%if-archive%games%tag%ei.tag/URL--http&c%%mirror.ifarchive.org%if-archive%games%tag%ei.tag

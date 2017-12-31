@@ -1,1 +1,1 @@
-../../../.git/annex/objects/3q/4F/SHA256E-s125315--c60b85b61d89a9684cb60436efac92c521bc17f925e1f928bc62086abb1d511b.z3/SHA256E-s125315--c60b85b61d89a9684cb60436efac92c521bc17f925e1f928bc62086abb1d511b.z3
+../../../.git/annex/objects/Mv/2q/URL--http&c%%mirror.ifarchive.org%if-archive%infocom%demos%sampler2.z3/URL--http&c%%mirror.ifarchive.org%if-archive%infocom%demos%sampler2.z3

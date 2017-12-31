@@ -1,1 +1,1 @@
-../../../.git/annex/objects/6m/zg/SHA256E-s737280--1abcf6484a3ec2341ed399de6573899ce02d783b629638caaa5a822ae7f02548.st/SHA256E-s737280--1abcf6484a3ec2341ed399de6573899ce02d783b629638caaa5a822ae7f02548.st
+../../../.git/annex/objects/6J/QG/URL--http&c%%mirror.ifarchive.org%if-archive%games%atari-ST%bluesun.st/URL--http&c%%mirror.ifarchive.org%if-archive%games%atari-ST%bluesun.st

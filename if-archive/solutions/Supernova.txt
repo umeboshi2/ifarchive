@@ -1,1 +1,1 @@
-../../.git/annex/objects/VG/5G/SHA256E-s7864--75f74087f3dabf482179a9e138ec1f20b5072ea1c5efa8afa8759487c3820719.txt/SHA256E-s7864--75f74087f3dabf482179a9e138ec1f20b5072ea1c5efa8afa8759487c3820719.txt
+../../.git/annex/objects/9V/xz/URL--http&c%%mirror.ifarchive.org%if-archive%solutions%Supernova.txt/URL--http&c%%mirror.ifarchive.org%if-archive%solutions%Supernova.txt

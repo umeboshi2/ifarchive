@@ -1,1 +1,1 @@
-../../../.git/annex/objects/Gz/4K/SHA256E-s15990--969e1f78a3be94f9700a8b2bdf1b2b40fa7bad0456019336591dd4109a75409e.h/SHA256E-s15990--969e1f78a3be94f9700a8b2bdf1b2b40fa7bad0456019336591dd4109a75409e.h
+../../../.git/annex/objects/4k/xg/URL--http&c%%mirror.ifarchive.org%if-archive%programming%glk%glk.h/URL--http&c%%mirror.ifarchive.org%if-archive%programming%glk%glk.h

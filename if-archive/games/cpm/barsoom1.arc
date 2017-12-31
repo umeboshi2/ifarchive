@@ -1,1 +1,1 @@
-../../../.git/annex/objects/75/63/SHA256E-s70843--e6fb8ec4c78393d3ce2e790d1b5634cb9aa2ac5d84abc3c8b7c176a42562ed12.arc/SHA256E-s70843--e6fb8ec4c78393d3ce2e790d1b5634cb9aa2ac5d84abc3c8b7c176a42562ed12.arc
+../../../.git/annex/objects/vf/mF/URL--http&c%%mirror.ifarchive.org%if-archive%games%cpm%barsoom1.arc/URL--http&c%%mirror.ifarchive.org%if-archive%games%cpm%barsoom1.arc
